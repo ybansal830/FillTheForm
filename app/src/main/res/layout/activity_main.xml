@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#259BC8">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="#3EBAE9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="30dp"
+            android:text="Add Buyer"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btOne"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/check"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Organization name"
+            android:layout_marginStart="80dp"
+            android:textSize="15sp"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/etFirst"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.8">
+
+        <ImageView
+            android:id="@+id/ivOne"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:src="@drawable/name"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/tvOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ivOne"
+            android:textSize="10sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:text="Customer Name"/>
+
+        <EditText
+            android:id="@+id/etOne"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/ivOne"
+            android:layout_below="@+id/tvOne"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:id="@+id/ivTwo"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:src="@drawable/phone"
+            android:layout_below="@+id/etOne"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/tvTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_below="@+id/etOne"
+            android:layout_toEndOf="@+id/ivOne"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Mobile Number"/>
+
+        <EditText
+            android:id="@+id/etTwo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/ivOne"
+            android:layout_below="@+id/tvTwo"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:id="@+id/ivThree"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:src="@drawable/envelope"
+            android:layout_below="@+id/etTwo"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/tvThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_below="@+id/etTwo"
+            android:layout_toEndOf="@+id/ivOne"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Email"/>
+
+        <EditText
+            android:id="@+id/etThree"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/ivOne"
+            android:layout_below="@+id/tvThree"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:id="@+id/ivFour"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:src="@drawable/location"
+            android:layout_below="@+id/etThree"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/tvFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_below="@+id/etThree"
+            android:layout_toEndOf="@+id/ivOne"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Address"/>
+
+        <EditText
+            android:id="@+id/etFour"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/ivOne"
+            android:layout_below="@+id/tvFour"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:id="@+id/ivFive"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:src="@drawable/manufacturer"
+            android:layout_below="@+id/etFour"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/tvFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_below="@+id/etFour"
+            android:layout_toEndOf="@+id/ivOne"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Manufacturer"/>
+
+        <EditText
+            android:id="@+id/etFive"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/ivOne"
+            android:layout_below="@+id/tvFive"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:id="@+id/ivSix"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:src="@drawable/tax"
+            android:layout_below="@+id/etFive"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/tvSix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_below="@+id/etFive"
+            android:layout_toEndOf="@+id/ivOne"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Tax ID"/>
+
+        <EditText
+            android:id="@+id/etSix"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/ivOne"
+            android:layout_below="@+id/tvSix"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:id="@+id/ivSeven"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:src="@drawable/company"
+            android:layout_below="@+id/etSix"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/tvSeven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_below="@+id/etSix"
+            android:layout_toEndOf="@+id/ivOne"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Company ID"/>
+
+        <EditText
+            android:id="@+id/etSeven"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/ivOne"
+            android:layout_below="@+id/tvSeven"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
